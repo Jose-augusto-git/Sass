@@ -1,7 +1,7 @@
-$cor: red;
-$bg: black;
-
-h1{
-    color: $cor;
-    background-color: $bg;
+@import 'variaveis';
+@for $i from 1 through 3{
+    .item-#{$i}{
+        background: $cor-principal;
+        margin-bottom:2px ;
+    }
 }

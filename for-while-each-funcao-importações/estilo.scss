@@ -1,0 +1,64 @@
+/* For */
+/* Through e to*/
+
+@for $i from 1 through 3{
+    .item-#{$i}{
+        background: green;
+        margin-bottom:2px ;
+    }
+}
+
+
+
+/* each */
+
+$lista: green, yellow, red;
+$contador: 1;
+@each $cor in $lista{
+    .item-#{$contador}{
+        background: $cor;
+        margin-bottom: 2px;
+    }
+
+    $contador: $contador + 1;
+}
+
+/* Funções */
+
+$total: 12;
+
+@function largura-coluna($coluna){
+    @return percentage($coluna/$total) ;
+}
+
+$resultado: largura-coluna(6);
+
+@for $i from 1 through $total{
+    .col-#{$i}{
+        background: brown;
+        width: largura-coluna($i);
+        
+    }
+}
+
+/*
+#{$resultado}
+
+*/
+
+/* outras funções
+
+-mix(green, red, 50%)
+-darken(red, 50%)
+-lighten(blue , 20%)
+
+*/
+
+.alerta{
+    background: lighten(blue , 20%) ;
+    color: yellow;
+}
+
+
+
+

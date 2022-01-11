@@ -1,0 +1,105 @@
+/* Mixin */
+@mixin titulo($cor:white, $cor-bg:black){
+    color: $cor;
+    background: $cor-bg;
+    padding: 10px 5px;
+}
+h1{
+    
+    @include titulo(white, red);
+}
+
+h2{
+    @include titulo(yellow);
+
+}
+
+/*
+Herença 
+Multiplas diretivas
+*/
+.classe1{
+    color: red;
+}
+
+.classe2{
+    background:black;
+}
+
+.vermelho{
+    @extend .classe1;
+    @extend .classe2;
+
+}
+
+
+
+/*
+Encadeamento de diretivas
+Placeholders(%)
+*/
+
+%pai{
+    color: blue;
+}
+
+%filho{
+    @extend %pai;
+    background:greenyellow;
+}
+
+.erro{
+    @extend %filho;
+    padding: 10px;
+    border: 1px solid red;
+    
+
+}
+
+/*
+Diretivas de controle
+*/
+
+$cor: green;
+
+@if($cor == green){
+
+    p{
+        color: $cor;
+    }
+
+}@else if($cor == red){
+
+    p{
+        color: $cor;
+    }
+
+}@else{
+    p{
+        color: black;
+    }
+}
+
+/*
+Diretivas e mixins
+*/
+
+@mixin tema ($tema:padrao) {
+    @if($tema == natal){
+        background: rgb(136, 11, 11);
+        color: white;
+    }@else if($tema == blackfriday){
+        background: black;
+        color: white;
+
+
+    }@else{
+        background: white;
+        color: black;
+    }
+    
+}
+
+body{
+    @include tema;
+}

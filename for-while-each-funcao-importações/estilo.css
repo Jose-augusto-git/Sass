@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* For */
+/* Through e to*/
+.item-1 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+.item-2 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+.item-3 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+/* each */
+.item-1 {
+  background: green;
+  margin-bottom: 2px;
+}
+
+.item-2 {
+  background: yellow;
+  margin-bottom: 2px;
+}
+
+.item-3 {
+  background: red;
+  margin-bottom: 2px;
+}
+
+/* Funções */
+.col-1 {
+  background: brown;
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  background: brown;
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  background: brown;
+  width: 25%;
+}
+
+.col-4 {
+  background: brown;
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  background: brown;
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  background: brown;
+  width: 50%;
+}
+
+.col-7 {
+  background: brown;
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  background: brown;
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  background: brown;
+  width: 75%;
+}
+
+.col-10 {
+  background: brown;
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  background: brown;
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  background: brown;
+  width: 100%;
+}
+
+/*
+50%
+
+*/
+/* outras funções
+
+-mix(green, red, 50%)
+-darken(red, 50%)
+-lighten(blue , 20%)
+
+*/
+.alerta {
+  background: #6666ff;
+  color: yellow;
+}
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEA,IAAI;EAEA,KAAK,EAAE,GAAG;EACV,gBAAgB,EALf,KAAK",
-"sources": ["../sass/estilo-textos.scss"],
-"names": [],
-"file": "estilo-textos.css"
-}
